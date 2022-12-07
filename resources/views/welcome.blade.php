@@ -5,5 +5,5 @@
 @section('content')
     {{ $usersUnique }}
 
-    <button>OLD BUTTON</button>
+    <button id="newID">NEW BUTTON</button>
 @endsection
