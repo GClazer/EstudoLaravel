@@ -11,7 +11,6 @@ class UserController extends Controller
     public function index() {
 
         $users = User::get();
-        $comments = Comment::get();
 
         $names = $users->reject(fn ($user) => $user->active === 0)
                             ->map(fn ($user) => $user->name);
